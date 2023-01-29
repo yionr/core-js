@@ -1,3 +1,3 @@
-require('../../modules/es.object.to-string');
-require('../../modules/es.promise');
-require('../../modules/esnext.async-iterator.async-dispose');
+var parent = require('../../actual/async-iterator/async-dispose');
+
+module.exports = parent;

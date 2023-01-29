@@ -1,5 +1,18 @@
 ## Changelog
 ##### Unreleased
+- Async explicit resource management:
+  - Built-ins:
+    - `Symbol.asyncDispose`
+    - `AsyncDisposableStack`
+      - `AsyncDisposableStack.prototype.disposeAsync`
+      - `AsyncDisposableStack.prototype.use`
+      - `AsyncDisposableStack.prototype.adopt`
+      - `AsyncDisposableStack.prototype.defer`
+      - `AsyncDisposableStack.prototype.move`
+      - `AsyncDisposableStack.prototype[@@asyncDispose]`
+    - `AsyncIterator.prototype[@@asyncDispose]`
+  - Moved back into [the initial proposal](https://github.com/tc39/proposal-explicit-resource-management) -> moved to stage 3, [proposal-explicit-resource-management/154](https://github.com/tc39/proposal-explicit-resource-management/pull/154)
+  - Added `/actual/` namespace entries, disabled forced replacement
 - Fixed the order of arguments validation in `DataView` methods
 - Compat data improvements:
   - [`Set` methods proposal](https://github.com/tc39/proposal-set-methods) marked as [supported from Safari 17.0](https://developer.apple.com/documentation/safari-release-notes/safari-17-release-notes#JavaScript)

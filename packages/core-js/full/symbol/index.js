@@ -1,5 +1,4 @@
 var parent = require('../../actual/symbol');
-require('../../modules/esnext.symbol.async-dispose');
 require('../../modules/esnext.symbol.is-registered-symbol');
 require('../../modules/esnext.symbol.is-well-known-symbol');
 require('../../modules/esnext.symbol.matcher');
