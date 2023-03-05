@@ -92,7 +92,7 @@ deepEqual(compat({
 
 deepEqual(
   compat({ targets: { chrome: 93 } }),
-  compat({ modules: 'core-js', targets: { chrome: 93 } }),
+  compat({ modules: 'core-js/full', targets: { chrome: 93 } }),
   'no modules',
 );
 
