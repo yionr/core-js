@@ -1898,9 +1898,6 @@ export const data = {
   },
   'esnext.async-iterator.to-array': {
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.bigint.range': {
-  },
   'esnext.composite-key': {
   },
   'esnext.composite-symbol': {
@@ -2004,9 +2001,6 @@ export const data = {
   'esnext.math.signbit': {
   },
   'esnext.number.from-string': {
-  },
-  // TODO: Remove from `core-js@4`
-  'esnext.number.range': {
   },
   // TODO: Remove this module from `core-js@4` since it's split to modules listed below
   'esnext.observable': {
