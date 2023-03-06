@@ -985,7 +985,6 @@ for (const NS of ['es', 'stable', 'actual', 'full']) {
 }
 
 for (const NS of ['full']) {
-  load(NS, 'typed-array/from-async');
   load(NS, 'typed-array/filter-reject');
   load(NS, 'typed-array/group-by');
   load(NS, 'typed-array/unique-by');

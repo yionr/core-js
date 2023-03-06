@@ -1,9 +1,7 @@
 var parent = require('../../actual/typed-array');
 require('../../modules/es.map');
-require('../../modules/es.promise');
-// TODO: Remove from `core-js@4`
-require('../../modules/esnext.typed-array.from-async');
 require('../../modules/esnext.typed-array.filter-reject');
+// TODO: Remove from `core-js@4`
 require('../../modules/esnext.typed-array.group-by');
 require('../../modules/esnext.typed-array.unique-by');
 

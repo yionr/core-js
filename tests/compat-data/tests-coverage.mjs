@@ -36,7 +36,6 @@ const ignore = new Set([
   'esnext.symbol.metadata',
   'esnext.symbol.pattern-match',
   'esnext.symbol.replace-all',
-  'esnext.typed-array.from-async',
   'esnext.typed-array.group-by',
   'web.url-search-params',
   'web.url',
