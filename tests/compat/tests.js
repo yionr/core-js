@@ -1672,10 +1672,6 @@ GLOBAL.tests = {
   'esnext.number.from-string': function () {
     return Number.fromString;
   },
-  // TODO: Remove this module from `core-js@4` since it's split to modules listed below
-  'esnext.observable': function () {
-    return Observable;
-  },
   'esnext.observable.constructor': function () {
     return Observable;
   },
