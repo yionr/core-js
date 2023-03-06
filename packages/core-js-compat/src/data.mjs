@@ -1299,7 +1299,7 @@ export const data = {
     rhino: '1.7.13',
     safari: '10.0',
   },
-  'es.string.at-alternative': {
+  'es.string.at': {
     chrome: '92',
     firefox: '90',
     'react-native': '0.71',
@@ -1847,8 +1847,6 @@ export const data = {
     bun: '0.3.0',
   },
   // TODO: Remove from `core-js@4`
-  'esnext.array.at': null,
-  // TODO: Remove from `core-js@4`
   'esnext.array.filter-out': {
   },
   'esnext.array.filter-reject': {
@@ -2170,9 +2168,6 @@ export const data = {
   // TODO: Remove from `core-js@4`
   'esnext.set.union': {
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.string.at': {
-  },
   'esnext.string.cooked': {
   },
   'esnext.string.code-points': {
@@ -2215,8 +2210,6 @@ export const data = {
   // TODO: Remove from `core-js@4`
   'esnext.typed-array.from-async': {
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.typed-array.at': null,
   // TODO: Remove from `core-js@4`
   'esnext.typed-array.filter-out': {
   },
@@ -2444,8 +2437,6 @@ export const renamed = new Map([
   ['es.set', 'es.set.constructor'],
   ['es.weak-map', 'es.weak-map.constructor'],
   ['es.weak-set', 'es.weak-set.constructor'],
-  ['esnext.array.at', 'es.array.at'],
-  ['esnext.typed-array.at', 'es.typed-array.at'],
   ['web.url', 'web.url.constructor'],
   ['web.url-search-params', 'web.url-search-params.constructor'],
 ]);

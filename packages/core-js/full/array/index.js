@@ -1,7 +1,5 @@
 var parent = require('../../actual/array');
-require('../../modules/es.promise');
-// TODO: Remove from `core-js@4`
-require('../../modules/esnext.array.at');
+require('../../modules/es.map');
 // TODO: Remove from `core-js@4`
 require('../../modules/esnext.array.filter-out');
 require('../../modules/esnext.array.filter-reject');

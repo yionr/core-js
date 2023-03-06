@@ -1,4 +1,4 @@
-require('../../../modules/es.string.at-alternative');
+require('../../../modules/es.string.at');
 var entryVirtual = require('../../../internals/entry-virtual');
 
 module.exports = entryVirtual('String').at;

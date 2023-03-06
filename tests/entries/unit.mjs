@@ -924,7 +924,6 @@ for (PATH of ['core-js-pure', 'core-js']) {
   load('proposals/relative-indexing-method');
   load('proposals/seeded-random');
   load('proposals/set-methods');
-  load('proposals/string-at');
   load('proposals/string-cooked');
   load('proposals/string-code-points');
   load('proposals/string-dedent');
@@ -1025,8 +1024,6 @@ for (const NS of ['full']) {
   load(NS, 'typed-array/group-by');
   load(NS, 'typed-array/unique-by');
 }
-
-load('modules/esnext.string.at-alternative');
 
 echo(chalk.green(`tested ${ chalk.cyan(tested.size) } commonjs entry points`));
 

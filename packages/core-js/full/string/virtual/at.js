@@ -1,6 +1,3 @@
-require('../../../actual/string/virtual/at');
-// TODO: Remove from `core-js@4`
-require('../../../modules/esnext.string.at');
-var entryVirtual = require('../../../internals/entry-virtual');
+var parent = require('../../../actual/string/virtual/at');
 
-module.exports = entryVirtual('String').at;
+module.exports = parent;

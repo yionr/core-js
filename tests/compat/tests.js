@@ -1077,7 +1077,7 @@ GLOBAL.tests = {
       && set.has(0)
       && set[Symbol.toStringTag];
   }],
-  'es.string.at-alternative': function () {
+  'es.string.at': function () {
     return '𠮷'.at(-2) === '\uD842';
   },
   'es.string.code-point-at': function () {

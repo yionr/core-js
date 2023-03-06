@@ -1,5 +1,3 @@
-require('../../actual/string/at');
-// TODO: Remove from `core-js@4`
-require('../../modules/esnext.string.at');
+var parent = require('../../actual/string/at');
 
-module.exports = require('../../internals/entry-unbind')('String', 'at');
+module.exports = parent;

@@ -1,4 +1,4 @@
-require('../../modules/es.string.at-alternative');
+require('../../modules/es.string.at');
 var entryUnbind = require('../../internals/entry-unbind');
 
 module.exports = entryUnbind('String', 'at');
