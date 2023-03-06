@@ -13,7 +13,6 @@ require('../proposals/number-from-string');
 require('../proposals/observable');
 require('../proposals/pattern-matching');
 require('../proposals/promise-try');
-require('../proposals/seeded-random');
 require('../proposals/string-code-points');
 require('../proposals/string-cooked');
 

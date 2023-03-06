@@ -773,7 +773,6 @@ for (PATH of ['core-js-pure', 'core-js']) {
     ok(load(NS, 'math/rad-per-deg') === 180 / Math.PI);
     ok(load(NS, 'math/radians')(180) === Math.PI);
     ok(load(NS, 'math/scale')(3, 1, 2, 1, 2) === 3);
-    ok(typeof load(NS, 'math/seeded-prng')({ seed: 42 }).next().value === 'number');
     ok(load(NS, 'math/signbit')(-2) === true);
     ok(load(NS, 'map/of')([1, 2], [3, 4]) instanceof Map);
     ok(load(NS, 'map/reduce')(new Map([[1, 2], [2, 3], [3, 4]]), (a, b) => a + b) === 9);
@@ -913,7 +912,6 @@ for (PATH of ['core-js-pure', 'core-js']) {
   load('proposals/regexp-dotall-flag');
   load('proposals/regexp-named-groups');
   load('proposals/relative-indexing-method');
-  load('proposals/seeded-random');
   load('proposals/set-methods');
   load('proposals/string-cooked');
   load('proposals/string-code-points');
