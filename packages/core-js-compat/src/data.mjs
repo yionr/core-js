@@ -1913,9 +1913,6 @@ export const data = {
   },
   'esnext.function.is-constructor': {
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.function.un-this': {
-  },
   'esnext.iterator.constructor': {
   },
   'esnext.iterator.dispose': {

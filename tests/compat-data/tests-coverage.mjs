@@ -16,7 +16,6 @@ const ignore = new Set([
   'es.weak-map',
   'es.weak-set',
   'esnext.bigint.range',
-  'esnext.function.un-this',
   'esnext.number.range',
   'esnext.reflect.define-metadata',
   'esnext.reflect.delete-metadata',
