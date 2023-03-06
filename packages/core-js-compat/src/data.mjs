@@ -143,8 +143,6 @@ export const data = {
     rhino: '1.7.14',
     safari: '8.0',
   },
-  // TODO: Remove this module from `core-js@4` since it's replaced to module below
-  'es.aggregate-error': null,
   'es.aggregate-error.constructor': {
     chrome: '85',
     firefox: '79',
@@ -433,8 +431,6 @@ export const data = {
     rhino: '1.7.13',
     safari: '12.1',
   },
-  // TODO: Remove this module from `core-js@4` since it's replaced to module below
-  'es.data-view': null,
   'es.data-view.constructor': {
     chrome: '26',
     firefox: '15',
@@ -566,8 +562,6 @@ export const data = {
     hermes: '0.1',
     safari: '10.0',
   },
-  // TODO: Remove this module from `core-js@4` since it's replaced to module below
-  'es.map': null,
   'es.map.constructor': {
     chrome: '51',
     edge: '15',
@@ -1290,8 +1284,6 @@ export const data = {
     hermes: '0.1',
     safari: '10.0',
   },
-  // TODO: Remove this module from `core-js@4` since it's replaced to module below
-  'es.set': null,
   'es.set.constructor': {
     chrome: '51',
     edge: '15',
@@ -1822,8 +1814,6 @@ export const data = {
     rhino: '1.7.13',
     safari: '1',
   },
-  // TODO: Remove this module from `core-js@4` since it's replaced to module below
-  'es.weak-map': null,
   'es.weak-map.constructor': {
     chrome: '51',
     // adding frozen arrays to WeakMap unfreeze them
@@ -1832,8 +1822,6 @@ export const data = {
     rhino: '1.7.13',
     safari: '10.0',
   },
-  // TODO: Remove this module from `core-js@4` since it's replaced to module below
-  'es.weak-set': null,
   'es.weak-set.constructor': {
     chrome: '51',
     edge: '15',
@@ -2285,8 +2273,6 @@ export const data = {
     rhino: '1.7.13',
     safari: '1.0',
   },
-  // TODO: Remove this module from `core-js@4` since it's replaced to module below
-  'web.url': null,
   'web.url.constructor': {
     bun: '0.1.1',
     chrome: '67',
@@ -2303,8 +2289,6 @@ export const data = {
     node: '10.0',
     safari: '14.0',
   },
-  // TODO: Remove this module from `core-js@4` since it's replaced to module below
-  'web.url-search-params': null,
   'web.url-search-params.constructor': {
     bun: '0.1.1',
     chrome: '67',
@@ -2318,15 +2302,7 @@ export const data = {
 };
 
 export const renamed = new Map([
-  // TODO: Clean in `core-js@4`
-  ['es.aggregate-error', 'es.aggregate-error.constructor'],
-  ['es.data-view', 'es.data-view.constructor'],
-  ['es.map', 'es.map.constructor'],
-  ['es.set', 'es.set.constructor'],
-  ['es.weak-map', 'es.weak-map.constructor'],
-  ['es.weak-set', 'es.weak-set.constructor'],
-  ['web.url', 'web.url.constructor'],
-  ['web.url-search-params', 'web.url-search-params.constructor'],
+  // none
 ]);
 
 for (const [old, nw] of renamed) data[old] = data[nw];
@@ -2335,10 +2311,6 @@ export const dataWithIgnored = { ...data };
 
 export const ignored = [
   // TODO: Clean in `core-js@4`
-  'es.aggregate-error.constructor',
-  'es.data-view.constructor',
-  'es.map.constructor',
-  'es.set.constructor',
   'es.string.trim-left',
   'es.string.trim-right',
   'es.symbol.constructor',
@@ -2351,8 +2323,6 @@ export const ignored = [
   'es.promise.race',
   'es.promise.reject',
   'es.promise.resolve',
-  'es.weak-map.constructor',
-  'es.weak-set.constructor',
   'esnext.observable.constructor',
   'esnext.observable.from',
   'esnext.observable.of',
@@ -2360,8 +2330,6 @@ export const ignored = [
   'web.set-immediate',
   'web.set-interval',
   'web.set-timeout',
-  'web.url.constructor',
-  'web.url-search-params.constructor',
 ];
 
 for (const ignore of ignored) delete data[ignore];

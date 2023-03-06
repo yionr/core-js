@@ -1,4 +1,4 @@
-require('../../modules/es.map');
+require('../../modules/es.map.constructor');
 require('../../modules/es.object.to-string');
 require('../../modules/esnext.array.group-to-map');
 var entryUnbind = require('../../internals/entry-unbind');

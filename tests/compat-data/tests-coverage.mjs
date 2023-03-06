@@ -9,12 +9,6 @@ const modulesSet = new Set([
 const tested = new Set(Object.keys(globalThis.tests));
 
 const ignore = new Set([
-  'es.aggregate-error',
-  'es.data-view',
-  'es.map',
-  'es.set',
-  'es.weak-map',
-  'es.weak-set',
   'esnext.reflect.define-metadata',
   'esnext.reflect.delete-metadata',
   'esnext.reflect.get-metadata',
@@ -24,8 +18,6 @@ const ignore = new Set([
   'esnext.reflect.has-metadata',
   'esnext.reflect.has-own-metadata',
   'esnext.reflect.metadata',
-  'web.url-search-params',
-  'web.url',
 ]);
 
 const missed = modules.filter(it => !(tested.has(it) || tested.has(it.replace(/^esnext\./, 'es.')) || ignore.has(it)));
