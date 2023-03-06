@@ -770,15 +770,11 @@ for (PATH of ['core-js-pure', 'core-js']) {
     ok(load(NS, 'math/deg-per-rad') === Math.PI / 180);
     ok(load(NS, 'math/degrees')(Math.PI) === 180);
     ok(load(NS, 'math/fscale')(3, 1, 2, 1, 2) === 3);
-    ok(load(NS, 'math/iaddh')(3, 2, 0xFFFFFFFF, 4) === 7);
-    ok(load(NS, 'math/isubh')(3, 4, 0xFFFFFFFF, 2) === 1);
-    ok(load(NS, 'math/imulh')(0xFFFFFFFF, 7) === -1);
     ok(load(NS, 'math/rad-per-deg') === 180 / Math.PI);
     ok(load(NS, 'math/radians')(180) === Math.PI);
     ok(load(NS, 'math/scale')(3, 1, 2, 1, 2) === 3);
     ok(typeof load(NS, 'math/seeded-prng')({ seed: 42 }).next().value === 'number');
     ok(load(NS, 'math/signbit')(-2) === true);
-    ok(load(NS, 'math/umulh')(0xFFFFFFFF, 7) === 6);
     ok(load(NS, 'map/of')([1, 2], [3, 4]) instanceof Map);
     ok(load(NS, 'map/reduce')(new Map([[1, 2], [2, 3], [3, 4]]), (a, b) => a + b) === 9);
     ok(load(NS, 'map/some')(new Map([[1, 2], [2, 3], [3, 4]]), it => it % 2) === true);
@@ -893,7 +889,6 @@ for (PATH of ['core-js-pure', 'core-js']) {
   load('proposals/collection-methods');
   load('proposals/collection-of-from');
   load('proposals/decorator-metadata');
-  load('proposals/efficient-64-bit-arithmetic');
   load('proposals/error-cause');
   load('proposals/explicit-resource-management');
   load('proposals/function-demethodize');
