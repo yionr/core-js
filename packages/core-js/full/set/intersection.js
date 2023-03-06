@@ -1,8 +1,3 @@
-require('../../actual/set/intersection');
-require('../../modules/es.array.iterator');
-require('../../modules/es.string.iterator');
-require('../../modules/esnext.set.intersection');
-require('../../modules/web.dom-collections.iterator');
-var entryUnbind = require('../../internals/entry-unbind');
+var parent = require('../../actual/set/intersection');
 
-module.exports = entryUnbind('Set', 'intersection');
+module.exports = parent;

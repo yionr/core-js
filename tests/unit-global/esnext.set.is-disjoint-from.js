@@ -1,4 +1,4 @@
-import { createIterable, createSetLike } from '../helpers/helpers';
+import { createSetLike } from '../helpers/helpers';
 
 QUnit.test('Set#isDisjointFrom', assert => {
   const { isDisjointFrom } = Set.prototype;
@@ -18,16 +18,8 @@ QUnit.test('Set#isDisjointFrom', assert => {
   assert.true(new Set([1, 2, 3]).isDisjointFrom(createSetLike([4, 5, 6])));
   assert.false(new Set([1, 2, 3]).isDisjointFrom(createSetLike([5, 4, 3])));
 
-  // TODO: drop from core-js@4
-  assert.true(new Set([1]).isDisjointFrom([2]));
-  assert.false(new Set([1]).isDisjointFrom([1]));
-  assert.true(new Set([1, 2, 3]).isDisjointFrom([4, 5, 6]));
-  assert.false(new Set([1, 2, 3]).isDisjointFrom([5, 4, 3]));
-  assert.true(new Set([1]).isDisjointFrom(createIterable([2])));
-  assert.false(new Set([1]).isDisjointFrom(createIterable([1])));
-
   assert.throws(() => new Set([1, 2, 3]).isDisjointFrom(), TypeError);
-  assert.throws(() => isDisjointFrom.call({}, [1, 2, 3]), TypeError);
-  assert.throws(() => isDisjointFrom.call(undefined, [1, 2, 3]), TypeError);
-  assert.throws(() => isDisjointFrom.call(null, [1, 2, 3]), TypeError);
+  assert.throws(() => isDisjointFrom.call({}, new Set([1, 2, 3])), TypeError);
+  assert.throws(() => isDisjointFrom.call(undefined, new Set([1, 2, 3])), TypeError);
+  assert.throws(() => isDisjointFrom.call(null, new Set([1, 2, 3])), TypeError);
 });

@@ -1,4 +1,4 @@
-import { createIterable, createSetLike } from '../helpers/helpers';
+import { createSetLike } from '../helpers/helpers';
 
 import from from 'core-js-pure/es/array/from';
 import Set from 'core-js-pure/full/set';
@@ -26,14 +26,9 @@ QUnit.test('Set#intersection', assert => {
   assert.deepEqual(from(new Set([1, 2, 3]).intersection(createSetLike([3, 2, 1]))), [1, 2, 3]);
   assert.deepEqual(from(new Set([1, 2, 3]).intersection(createSetLike([3, 2, 1, 0]))), [1, 2, 3]);
 
-  // TODO: drop from core-js@4
-  assert.deepEqual(from(new Set([1, 2, 3]).intersection([4, 5])), []);
-  assert.deepEqual(from(new Set([1, 2, 3]).intersection([2, 3, 4])), [2, 3]);
-  assert.deepEqual(from(new Set([1, 2, 3]).intersection(createIterable([2, 3, 4]))), [2, 3]);
-
   assert.throws(() => new Set([1, 2, 3]).intersection(), TypeError);
 
-  assert.throws(() => intersection.call({}, [1, 2, 3]), TypeError);
-  assert.throws(() => intersection.call(undefined, [1, 2, 3]), TypeError);
-  assert.throws(() => intersection.call(null, [1, 2, 3]), TypeError);
+  assert.throws(() => intersection.call({}, new Set([1, 2, 3])), TypeError);
+  assert.throws(() => intersection.call(undefined, new Set([1, 2, 3])), TypeError);
+  assert.throws(() => intersection.call(null, new Set([1, 2, 3])), TypeError);
 });

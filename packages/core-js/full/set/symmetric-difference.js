@@ -1,8 +1,3 @@
-require('../../actual/set/symmetric-difference');
-require('../../modules/es.array.iterator');
-require('../../modules/es.string.iterator');
-require('../../modules/esnext.set.symmetric-difference');
-require('../../modules/web.dom-collections.iterator');
-var entryUnbind = require('../../internals/entry-unbind');
+var parent = require('../../actual/set/symmetric-difference');
 
-module.exports = entryUnbind('Set', 'symmetricDifference');
+module.exports = parent;

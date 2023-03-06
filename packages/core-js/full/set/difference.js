@@ -1,8 +1,3 @@
-require('../../actual/set/difference');
-require('../../modules/es.array.iterator');
-require('../../modules/es.string.iterator');
-require('../../modules/esnext.set.difference');
-require('../../modules/web.dom-collections.iterator');
-var entryUnbind = require('../../internals/entry-unbind');
+var parent = require('../../actual/set/difference');
 
-module.exports = entryUnbind('Set', 'difference');
+module.exports = parent;
