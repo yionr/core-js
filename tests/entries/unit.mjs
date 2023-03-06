@@ -729,8 +729,6 @@ for (PATH of ['core-js-pure', 'core-js']) {
     ok(typeof load(NS, 'array/filter-out') == 'function');
     ok(typeof load(NS, 'array/filter-reject') == 'function');
     ok(typeof load(NS, 'array/is-template-object') == 'function');
-    load(NS, 'array/last-item');
-    load(NS, 'array/last-index');
     ok(typeof load(NS, 'array/unique-by') == 'function');
     ok(typeof load(NS, 'array/virtual/filter-out') == 'function');
     ok(typeof load(NS, 'array/virtual/filter-reject') == 'function');
@@ -874,7 +872,6 @@ for (PATH of ['core-js-pure', 'core-js']) {
   load('proposals/array-grouping');
   load('proposals/array-includes');
   load('proposals/array-is-template-object');
-  load('proposals/array-last');
   load('proposals/array-unique');
   load('proposals/array-buffer-transfer');
   load('proposals/async-explicit-resource-management');
