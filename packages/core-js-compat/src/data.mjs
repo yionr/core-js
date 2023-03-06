@@ -2045,15 +2045,6 @@ export const data = {
   // TODO: Remove from `core-js@4`
   'esnext.number.range': {
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.object.iterate-entries': {
-  },
-  // TODO: Remove from `core-js@4`
-  'esnext.object.iterate-keys': {
-  },
-  // TODO: Remove from `core-js@4`
-  'esnext.object.iterate-values': {
-  },
   // TODO: Remove this module from `core-js@4` since it's split to modules listed below
   'esnext.observable': {
   },
