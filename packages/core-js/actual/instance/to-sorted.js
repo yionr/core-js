@@ -1,9 +1,3 @@
-var isPrototypeOf = require('../../internals/object-is-prototype-of');
-var method = require('../array/virtual/to-sorted');
+var parent = require('../../stable/instance/to-sorted');
 
-var ArrayPrototype = Array.prototype;
-
-module.exports = function (it) {
-  var own = it.toSorted;
-  return (it === ArrayPrototype || (isPrototypeOf(ArrayPrototype, it) && own === ArrayPrototype.toSorted)) ? method : own;
-};
+module.exports = parent;

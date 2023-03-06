@@ -1841,8 +1841,6 @@ export const data = {
     rhino: '1.7.13',
     safari: '10.0',
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.aggregate-error': null,
   'esnext.suppressed-error.constructor': {
   },
   'esnext.array.from-async': {
@@ -1855,10 +1853,6 @@ export const data = {
   },
   'esnext.array.filter-reject': {
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.array.find-last': null,
-  // TODO: Remove from `core-js@4`
-  'esnext.array.find-last-index': null,
   'esnext.array.group': {
     bun: '0.1.9',
     // https://github.com/tc39/proposal-array-grouping/issues/44#issuecomment-1306311107
@@ -1883,16 +1877,8 @@ export const data = {
   // TODO: Remove from `core-js@4`
   'esnext.array.last-item': {
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.array.to-reversed': null,
-  // TODO: Remove from `core-js@4`
-  'esnext.array.to-sorted': null,
-  // TODO: Remove from `core-js@4`
-  'esnext.array.to-spliced': null,
   'esnext.array.unique-by': {
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.array.with': null,
   'esnext.array-buffer.detached': {
   },
   'esnext.array-buffer.transfer': {
@@ -1952,8 +1938,6 @@ export const data = {
   // TODO: Remove from `core-js@4`
   'esnext.function.un-this': {
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.global-this': null,
   'esnext.iterator.constructor': {
   },
   // TODO: Remove from `core-js@4`
@@ -2076,8 +2060,6 @@ export const data = {
   'esnext.number.range': {
   },
   // TODO: Remove from `core-js@4`
-  'esnext.object.has-own': null,
-  // TODO: Remove from `core-js@4`
   'esnext.object.iterate-entries': {
   },
   // TODO: Remove from `core-js@4`
@@ -2095,10 +2077,6 @@ export const data = {
   },
   'esnext.observable.of': {
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.promise.all-settled': null,
-  // TODO: Remove from `core-js@4`
-  'esnext.promise.any': null,
   // TODO: Remove from `core-js@4`
   'esnext.promise.try': {
   },
@@ -2205,10 +2183,6 @@ export const data = {
     bun: '0.4.0',
     chrome: '111',
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.string.match-all': null,
-  // TODO: Remove from `core-js@4`
-  'esnext.string.replace-all': null,
   'esnext.string.to-well-formed': {
     // Safari ToString conversion bug
     // https://bugs.webkit.org/show_bug.cgi?id=251757
@@ -2249,23 +2223,13 @@ export const data = {
   'esnext.typed-array.filter-reject': {
   },
   // TODO: Remove from `core-js@4`
-  'esnext.typed-array.find-last': null,
-  // TODO: Remove from `core-js@4`
-  'esnext.typed-array.find-last-index': null,
-  // TODO: Remove from `core-js@4`
   'esnext.typed-array.group-by': {
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.typed-array.to-reversed': null,
-  // TODO: Remove from `core-js@4`
-  'esnext.typed-array.to-sorted': null,
   // TODO: Remove from `core-js@4`
   'esnext.typed-array.to-spliced': {
   },
   'esnext.typed-array.unique-by': {
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.typed-array.with': null,
   'esnext.weak-map.delete-all': {
   },
   'esnext.weak-map.from': {
@@ -2481,25 +2445,7 @@ export const renamed = new Map([
   ['es.weak-map', 'es.weak-map.constructor'],
   ['es.weak-set', 'es.weak-set.constructor'],
   ['esnext.array.at', 'es.array.at'],
-  ['esnext.array.find-last', 'es.array.find-last'],
-  ['esnext.array.find-last-index', 'es.array.find-last-index'],
-  ['esnext.array.to-reversed', 'es.array.to-reversed'],
-  ['esnext.array.to-sorted', 'es.array.to-sorted'],
-  ['esnext.array.to-spliced', 'es.array.to-spliced'],
-  ['esnext.array.with', 'es.array.with'],
-  ['esnext.aggregate-error', 'es.aggregate-error'],
-  ['esnext.global-this', 'es.global-this'],
-  ['esnext.object.has-own', 'es.object.has-own'],
-  ['esnext.promise.all-settled', 'es.promise.all-settled'],
-  ['esnext.promise.any', 'es.promise.any'],
-  ['esnext.string.match-all', 'es.string.match-all'],
-  ['esnext.string.replace-all', 'es.string.replace-all'],
   ['esnext.typed-array.at', 'es.typed-array.at'],
-  ['esnext.typed-array.find-last', 'es.typed-array.find-last'],
-  ['esnext.typed-array.find-last-index', 'es.typed-array.find-last-index'],
-  ['esnext.typed-array.to-reversed', 'es.typed-array.to-reversed'],
-  ['esnext.typed-array.to-sorted', 'es.typed-array.to-sorted'],
-  ['esnext.typed-array.with', 'es.typed-array.with'],
   ['web.url', 'web.url.constructor'],
   ['web.url-search-params', 'web.url-search-params.constructor'],
 ]);
