@@ -3,7 +3,6 @@ require('../../modules/es.map');
 require('../../modules/es.promise');
 // TODO: Remove from `core-js@4`
 require('../../modules/esnext.typed-array.from-async');
-require('../../modules/esnext.typed-array.filter-out');
 require('../../modules/esnext.typed-array.filter-reject');
 require('../../modules/esnext.typed-array.group-by');
 require('../../modules/esnext.typed-array.unique-by');

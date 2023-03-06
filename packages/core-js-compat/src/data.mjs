@@ -1846,9 +1846,6 @@ export const data = {
   'esnext.array.from-async': {
     bun: '0.3.0',
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.array.filter-out': {
-  },
   'esnext.array.filter-reject': {
   },
   'esnext.array.group': {
@@ -2149,9 +2146,6 @@ export const data = {
   },
   // TODO: Remove from `core-js@4`
   'esnext.typed-array.from-async': {
-  },
-  // TODO: Remove from `core-js@4`
-  'esnext.typed-array.filter-out': {
   },
   'esnext.typed-array.filter-reject': {
   },
