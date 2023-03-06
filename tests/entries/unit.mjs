@@ -628,12 +628,8 @@ for (PATH of ['core-js-pure', 'core-js']) {
     ok(typeof load(NS, 'array/from-async') == 'function');
     ok(typeof load(NS, 'array/group') == 'function');
     ok(typeof load(NS, 'array/group-to-map') == 'function');
-    ok(typeof load(NS, 'array/group-by') == 'function');
-    ok(typeof load(NS, 'array/group-by-to-map') == 'function');
     ok(typeof load(NS, 'array/virtual/group') == 'function');
     ok(typeof load(NS, 'array/virtual/group-to-map') == 'function');
-    ok(typeof load(NS, 'array/virtual/group-by') == 'function');
-    ok(typeof load(NS, 'array/virtual/group-by-to-map') == 'function');
     load(NS, 'array-buffer/detached');
     load(NS, 'array-buffer/transfer');
     load(NS, 'array-buffer/transfer-to-fixed-length');
@@ -695,18 +691,6 @@ for (PATH of ['core-js-pure', 'core-js']) {
     ok(instanceGroupToMap({}) === undefined);
     ok(typeof instanceGroupToMap([]) == 'function');
     ok(instanceGroupToMap([]).call([1, 2, 3], it => it % 2).get(1).length === 2);
-
-    const instanceGroupBy = load(NS, 'instance/group-by');
-    ok(typeof instanceGroupBy == 'function');
-    ok(instanceGroupBy({}) === undefined);
-    ok(typeof instanceGroupBy([]) == 'function');
-    ok(instanceGroupBy([]).call([1, 2, 3], it => it % 2)[1].length === 2);
-
-    const instanceGroupByToMap = load(NS, 'instance/group-by-to-map');
-    ok(typeof instanceGroupByToMap == 'function');
-    ok(instanceGroupByToMap({}) === undefined);
-    ok(typeof instanceGroupByToMap([]) == 'function');
-    ok(instanceGroupByToMap([]).call([1, 2, 3], it => it % 2).get(1).length === 2);
 
     const instanceIsWellFormed = load(NS, 'instance/is-well-formed');
     ok(typeof instanceIsWellFormed == 'function');
@@ -983,7 +967,6 @@ for (const NS of ['es', 'stable', 'actual', 'full']) {
 
 for (const NS of ['full']) {
   load(NS, 'typed-array/filter-reject');
-  load(NS, 'typed-array/group-by');
   load(NS, 'typed-array/unique-by');
 }
 

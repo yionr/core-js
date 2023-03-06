@@ -1853,12 +1853,6 @@ export const data = {
     // https://github.com/tc39/proposal-array-grouping/issues/44#issuecomment-1306311107
     // chrome: '108',
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.array.group-by': {
-  },
-  // TODO: Remove from `core-js@4`
-  'esnext.array.group-by-to-map': {
-  },
   'esnext.array.group-to-map': {
     bun: '0.1.9',
     // https://github.com/tc39/proposal-array-grouping/issues/44#issuecomment-1306311107
@@ -2136,9 +2130,6 @@ export const data = {
   'esnext.symbol.observable': {
   },
   'esnext.typed-array.filter-reject': {
-  },
-  // TODO: Remove from `core-js@4`
-  'esnext.typed-array.group-by': {
   },
   'esnext.typed-array.unique-by': {
   },

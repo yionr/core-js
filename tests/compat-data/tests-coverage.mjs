@@ -15,8 +15,6 @@ const ignore = new Set([
   'es.set',
   'es.weak-map',
   'es.weak-set',
-  'esnext.array.group-by',
-  'esnext.array.group-by-to-map',
   'esnext.async-iterator.as-indexed-pairs',
   'esnext.async-iterator.indexed',
   'esnext.bigint.range',
@@ -33,7 +31,6 @@ const ignore = new Set([
   'esnext.reflect.has-metadata',
   'esnext.reflect.has-own-metadata',
   'esnext.reflect.metadata',
-  'esnext.typed-array.group-by',
   'web.url-search-params',
   'web.url',
 ]);
