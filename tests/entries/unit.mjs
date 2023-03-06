@@ -715,8 +715,6 @@ for (PATH of ['core-js-pure', 'core-js']) {
     ok(typeof load(NS, 'array/unique-by') == 'function');
     ok(typeof load(NS, 'array/virtual/filter-reject') == 'function');
     ok(typeof load(NS, 'array/virtual/unique-by') == 'function');
-    ok(typeof load(NS, 'async-iterator/as-indexed-pairs') == 'function');
-    ok(typeof load(NS, 'async-iterator/indexed') == 'function');
     load(NS, 'bigint/range');
     load(NS, 'bigint');
     ok(typeof load(NS, 'composite-key')({}, 1, {}) === 'object');
@@ -727,8 +725,6 @@ for (PATH of ['core-js-pure', 'core-js']) {
     ok(!load(NS, 'function/is-constructor')(it => it));
     ok(load(NS, 'function/un-this')([].slice)([1, 2, 3], 1)[0] === 2);
     ok(load(NS, 'function/virtual/un-this').call([].slice)([1, 2, 3], 1)[0] === 2);
-    ok(typeof load(NS, 'iterator/as-indexed-pairs') == 'function');
-    ok(typeof load(NS, 'iterator/indexed') == 'function');
     ok(load(NS, 'iterator/range')(1, 2).next().value === 1);
     ok(load(NS, 'map/delete-all')(new Map(), 1, 2) === false);
     ok(load(NS, 'map/emplace')(new Map([[1, 2]]), 1, { update: it => it ** 2 }) === 4);
