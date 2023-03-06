@@ -24,8 +24,6 @@ const ignore = new Set([
   'esnext.function.un-this',
   'esnext.iterator.as-indexed-pairs',
   'esnext.iterator.indexed',
-  'esnext.map.update-or-insert',
-  'esnext.map.upsert',
   'esnext.number.range',
   'esnext.reflect.define-metadata',
   'esnext.reflect.delete-metadata',
@@ -42,7 +40,6 @@ const ignore = new Set([
   'esnext.typed-array.from-async',
   'esnext.typed-array.filter-out',
   'esnext.typed-array.group-by',
-  'esnext.weak-map.upsert',
   'web.url-search-params',
   'web.url',
 ]);

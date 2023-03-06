@@ -2009,12 +2009,6 @@ export const data = {
   },
   'esnext.map.update': {
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.map.update-or-insert': {
-  },
-  // TODO: Remove from `core-js@4`
-  'esnext.map.upsert': {
-  },
   'esnext.math.clamp': {
   },
   'esnext.math.deg-per-rad': {
@@ -2173,9 +2167,6 @@ export const data = {
   'esnext.weak-map.of': {
   },
   'esnext.weak-map.emplace': {
-  },
-  // TODO: Remove from `core-js@4`
-  'esnext.weak-map.upsert': {
   },
   'esnext.weak-set.add-all': {
   },
