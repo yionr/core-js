@@ -29,7 +29,6 @@ const ignore = new Set([
   'esnext.map.update-or-insert',
   'esnext.map.upsert',
   'esnext.number.range',
-  'esnext.promise.try',
   'esnext.reflect.define-metadata',
   'esnext.reflect.delete-metadata',
   'esnext.reflect.get-metadata',

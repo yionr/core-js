@@ -2052,9 +2052,6 @@ export const data = {
   'esnext.observable.of': {
   },
   // TODO: Remove from `core-js@4`
-  'esnext.promise.try': {
-  },
-  // TODO: Remove from `core-js@4`
   'esnext.reflect.define-metadata': {
   },
   // TODO: Remove from `core-js@4`
