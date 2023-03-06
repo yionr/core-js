@@ -42,7 +42,6 @@ const ignore = new Set([
   'esnext.typed-array.from-async',
   'esnext.typed-array.filter-out',
   'esnext.typed-array.group-by',
-  'esnext.typed-array.to-spliced',
   'esnext.weak-map.upsert',
   'web.url-search-params',
   'web.url',

@@ -3,7 +3,7 @@ import builder from 'core-js-builder';
 
 const polyfills = await builder({
   modules: 'core-js/actual',
-  exclude: [/group-by/, 'esnext.typed-array.to-spliced'],
+  exclude: [/group-by/, 'es.typed-array.to-reversed'],
   targets: { node: 16 },
   format: 'esm',
 });

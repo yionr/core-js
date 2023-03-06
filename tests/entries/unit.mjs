@@ -996,10 +996,6 @@ for (const NS of ['es', 'stable', 'actual', 'full']) {
   ok(typeof load(NS, 'typed-array').Uint32Array == 'function');
 }
 
-for (const NS of ['actual', 'full']) {
-  load(NS, 'typed-array/to-spliced');
-}
-
 for (const NS of ['full']) {
   load(NS, 'typed-array/from-async');
   load(NS, 'typed-array/filter-out');
