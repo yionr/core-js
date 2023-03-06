@@ -228,13 +228,6 @@ function NATIVE_RAW_JSON() {
   return JSON.isRawJSON(raw) && JSON.stringify(raw) === unsafeInt;
 }
 
-function IMMEDIATE() {
-  return setImmediate && clearImmediate && !(IS_BUN && (function () {
-    var version = global.Bun.version.split('.');
-    return version.length < 3 || version[0] == 0 && (version[1] < 3 || version[1] == 3 && version[2] == 0);
-  })());
-}
-
 function TIMERS() {
   return !(/MSIE .\./.test(USERAGENT) || IS_BUN && (function () {
     var version = global.Bun.version.split('.');
@@ -1902,8 +1895,6 @@ GLOBAL.tests = {
     return typeof DOMException == 'function'
       && DOMException.prototype[Symbol.toStringTag] === 'DOMException';
   },
-  // TODO: Remove this module from `core-js@4` since it's split to submodules
-  'web.immediate': IMMEDIATE,
   'web.queue-microtask': function () {
     return Object.getOwnPropertyDescriptor(GLOBAL, 'queueMicrotask').value;
   },
@@ -1914,7 +1905,12 @@ GLOBAL.tests = {
     var descriptor = Object.getOwnPropertyDescriptor(GLOBAL, 'self');
     return descriptor.get && descriptor.enumerable;
   },
-  'web.set-immediate': IMMEDIATE,
+  'web.set-immediate': function () {
+    return setImmediate && clearImmediate && !(IS_BUN && (function () {
+      var version = global.Bun.version.split('.');
+      return version.length < 3 || version[0] == 0 && (version[1] < 3 || version[1] == 3 && version[2] == 0);
+    })());
+  },
   'web.set-interval': TIMERS,
   'web.set-timeout': TIMERS,
   'web.structured-clone': function () {
@@ -1933,8 +1929,6 @@ GLOBAL.tests = {
       && checkErrorsCloning(structuredClone, DOMException)
       && checkNewErrorsCloningSemantic(structuredClone);
   },
-  // TODO: Remove this module from `core-js@4` since it's split to submodules
-  'web.timers': TIMERS,
   'web.url.constructor': URL_AND_URL_SEARCH_PARAMS_SUPPORT,
   'web.url.to-json': [URL_AND_URL_SEARCH_PARAMS_SUPPORT, function () {
     return URL.prototype.toJSON;
