@@ -5,9 +5,5 @@ require('../../modules/esnext.symbol.is-well-known');
 require('../../modules/esnext.symbol.matcher');
 require('../../modules/esnext.symbol.metadata-key');
 require('../../modules/esnext.symbol.observable');
-// TODO: Remove from `core-js@4`
-require('../../modules/esnext.symbol.metadata');
-require('../../modules/esnext.symbol.pattern-match');
-require('../../modules/esnext.symbol.replace-all');
 
 module.exports = parent;

@@ -2131,18 +2131,9 @@ export const data = {
   },
   'esnext.symbol.matcher': {
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.symbol.metadata': {
-  },
   'esnext.symbol.metadata-key': {
   },
   'esnext.symbol.observable': {
-  },
-  // TODO: Remove from `core-js@4`
-  'esnext.symbol.pattern-match': {
-  },
-  // TODO: Remove from `core-js@4`
-  'esnext.symbol.replace-all': {
   },
   'esnext.typed-array.filter-reject': {
   },

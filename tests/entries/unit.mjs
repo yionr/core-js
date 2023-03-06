@@ -804,11 +804,8 @@ for (PATH of ['core-js-pure', 'core-js']) {
     ok(load(NS, 'symbol/is-registered')(1) === false);
     ok(load(NS, 'symbol/is-well-known')(1) === false);
     ok(load(NS, 'symbol/matcher'));
-    ok(load(NS, 'symbol/metadata'));
     ok(load(NS, 'symbol/metadata-key'));
     ok(load(NS, 'symbol/observable'));
-    ok(load(NS, 'symbol/pattern-match'));
-    ok(load(NS, 'symbol/replace-all'));
     ok(load(NS, 'weak-map/delete-all')(new WeakMap(), [], {}) === false);
     ok(load(NS, 'weak-map/emplace')(new WeakMap(), {}, { insert: () => ({ a: 42 }) }).a === 42);
     ok(load(NS, 'weak-map/from')([[{}, 1], [[], 2]]) instanceof WeakMap);
