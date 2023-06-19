@@ -4,6 +4,7 @@ require('../proposals/array-grouping-v2');
 require('../proposals/array-is-template-object');
 require('../proposals/async-explicit-resource-management');
 require('../proposals/async-iterator-helpers');
+require('../proposals/dataview-get-set-uint8c');
 require('../proposals/iterator-range');
 require('../proposals/map-upsert-stage-2');
 require('../proposals/promise-with-resolvers');
