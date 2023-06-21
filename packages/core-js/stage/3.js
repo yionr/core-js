@@ -4,6 +4,7 @@ require('../proposals/array-from-async-stage-2');
 require('../proposals/array-buffer-transfer');
 require('../proposals/decorator-metadata-v2');
 require('../proposals/explicit-resource-management');
+require('../proposals/float16array');
 require('../proposals/iterator-helpers-stage-3-2');
 require('../proposals/json-parse-with-source');
 require('../proposals/set-methods-v2');

@@ -1531,6 +1531,12 @@ GLOBAL.tests = {
   'esnext.composite-symbol': function () {
     return compositeSymbol;
   },
+  'esnext.data-view.get-float16': [ARRAY_BUFFER_SUPPORT, function () {
+    return DataView.prototype.getFloat16;
+  }],
+  'esnext.data-view.set-float16': [ARRAY_BUFFER_SUPPORT, function () {
+    return DataView.prototype.setFloat16;
+  }],
   'esnext.disposable-stack.constructor': function () {
     return typeof DisposableStack == 'function';
   },
@@ -1674,6 +1680,9 @@ GLOBAL.tests = {
   },
   'esnext.math.fscale': function () {
     return Math.fscale;
+  },
+  'esnext.math.f16round': function () {
+    return Math.f16round;
   },
   'esnext.math.rad-per-deg': function () {
     return Math.RAD_PER_DEG;

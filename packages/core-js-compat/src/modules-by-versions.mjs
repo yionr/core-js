@@ -213,4 +213,9 @@ export default {
     'web.url-search-params.delete',
     'web.url-search-params.has',
   ],
+  3.32: [
+    'esnext.data-view.get-float16',
+    'esnext.data-view.set-float16',
+    'esnext.math.f16round',
+  ],
 };
